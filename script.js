@@ -15,13 +15,13 @@ skincare.forEach(function(product){
     productImage.setAttribute("src", product.imagePath);
     productDiv.appendChild(productImage);
 
-    const productBrand = document.createElement("p");
+    const productBrand = document.createElement("h4");
     productBrand.textContent = product.brand;
     productDiv.appendChild(productBrand);
 
     const productCompatibility = document.createElement("p");
     productCompatibility.textContent = product.compatibility;
-    productDiv.appendChild(productCompatilibility);
+    productDiv.appendChild(productCompatibility);
 
     skincareProducts.appendChild(productDiv)
     console.log("Added product:", product.name);
