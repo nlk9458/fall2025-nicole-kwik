@@ -23,6 +23,7 @@ skincare.forEach(function(product){
     productCompatibility.textContent = product.compatibility;
     productDiv.appendChild(productCompatibility);
 
+
     skincareProducts.appendChild(productDiv)
     console.log("Added product:", product.name);
 });
