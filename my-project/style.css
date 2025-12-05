@@ -1,4 +1,4 @@
-#skincare-products {
+#trending-products, #recommended-products, #browse-products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -39,7 +39,7 @@ body {
 nav {
     max-width: 1120px;
     margin: 12px auto 0;
-    padding: 8px 20px:
+    padding: 8px 20px;
     display: flex;
     gap: 16px;
     font-size: 0.95rem;
@@ -57,4 +57,73 @@ nav a {
 nav a:hover {
     background: #e5e7eb;
     color: #111827;
+}
+
+/* Browse Page */
+.browse-page h2 {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+}
+/* Search Bar */
+.browse-search {
+    margin-bottom: 16px;
+}
+#search-input {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 999px;
+    border: 1px solid #d1d5db;
+    font-size: 0.95rem;
+}
+/* Category pills */
+.browse-categories {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.category-pill {
+    border-radius: 999px;
+    border: 1px solid #d1d5db;
+    background: #fff;
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.category-pill.active, .category-pill:hover {
+    background: #111827;
+    color: #fff;
+    border-color: #111827;
+}
+
+main {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+
+/* Safe = Green, Not Safe = Red */
+
+.compatibility-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 14px;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 8px;
+    text-align: center;
+}
+.safe-pill {
+    background-color: #ecfdf5;
+    color: #059669;
+    border: 1px solid #34d399;
+}
+.not-safe-pill {
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #f87171;
 }

@@ -1,8 +1,47 @@
 <!DOCTYPE html>
 <HTML>
-    <nav>
+    <link rel="stylesheet" href="style.css">
+    <body>
+<nav>
         <a href="/index.html">Home</a>
         <a href="browse.html">Browse</a>
         <a href="profile.html">Profile</a>
     </nav>
+
+    <main class="browse-page">
+        <h2>Browse</h2>
+
+        <!-- Search Bar -->
+         <div class="browse-search">
+            <input 
+            type="text"
+            id="search-input"
+            placeholder="Search products..."
+            />
+         </div>
+
+         <!-- Categories -->
+          <div class="browse-categories">
+            <button class="category-pill active" data-category="all">Popular Now</button>
+            <button class="category-pill" data-category="Moisturizers">Moisturizers</button>
+            <button class="category-pill" data-category="Cleansers">Cleansers</button>
+            <button class="category-pill" data-category="Sunscreens">Sunscreens</button>
+            <button class="category-pill" data-category="Serums">Serums</button>
+            <button class="category-pill" data-category="Toners">Toners</button>
+          </div>
+
+          <!-- All Products Grid -->
+           <section class= "browse-products-section">
+            <h2>All Products</h2>
+              <div id="browse-products" class="product-grid">
+                <!-- JavaScript will populate this area -->
+              </div>
+           </section>
+
+    </main>
+    </body>
+    
+    <script src="/skincare.js"></script>
+    <script src="browse.js"></script>
+    
 </HTML>

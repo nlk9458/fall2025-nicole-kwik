@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Product</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="browse.html">Browse</a>
+      <a href="profile.html">Profile</a>
+    </nav>
+
+    <main class="product-page">
+      <!-- Search Bar -->
+      <div class="product-search">
+        <input
+          type="text"
+          id="product-search-input"
+          placeholder="Search products..."
+        />
+      </div>
+
+      <section class="product-layout">
+        <div class="product-image-wrapper">
+          <img id="product-image" src="" alt="Product Image" />
+        </div>
+
+        <div class="product-main-info">
+          <h1 id="product-name">Name of Product</h1>
+          <p id="product-brand">Brand Name</p>
+
+          <!-- pill text goes here (Safe / Not Safe) -->
+          <span id="product-compatibility" class="compatibility-pill"></span>
+
+          <!-- description paragraph -->
+          <p id="product-description"></p>
+
+          <h3>Where to Buy</h3>
+          <div id="buy-buttons" class="buy-buttons"></div>
+
+          <h3>Tried this product?</h3>
+          <div class="tried-buttons">
+            <button>Yes</button>
+            <button>No</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-bottom">
+        <div class="ingredients-column">
+          <h3>Ingredients</h3>
+
+          <h4>Safe</h4>
+          <div id="safe-ingredients" class="pill-list"></div>
+
+          <h4>Potential Irritants</h4>
+          <div id="irritant-ingredients" class="pill-list"></div>
+        </div>
+
+        <div class="why-column" id="not-safe-section">
+          <h3>Why it's not safe for you</h3>
+          <p id="why-not-safe">fill this in</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="/skincare.js"></script>
+    <script src="product.js"></script>
+  </body>
+</html>
