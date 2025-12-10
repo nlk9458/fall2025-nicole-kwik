@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
     <title>Product</title>
   </head>
   <body>
     <nav>
       <a href="/index.html">Home</a>
       <a href="browse.html">Browse</a>
-      <a href="profile.html">Profile</a>
     </nav>
 
     <main class="product-page">
@@ -21,6 +20,7 @@
         />
       </div>
 
+      <!-- IMAGE + MAIN INFO -->
       <section class="product-layout">
         <div class="product-image-wrapper">
           <img id="product-image" src="" alt="Product Image" />
@@ -30,10 +30,10 @@
           <h1 id="product-name">Name of Product</h1>
           <p id="product-brand">Brand Name</p>
 
-          <!-- pill text goes here (Safe / Not Safe) -->
+          <!-- compatibility pill -->
           <span id="product-compatibility" class="compatibility-pill"></span>
 
-          <!-- description paragraph -->
+          <!-- description -->
           <p id="product-description"></p>
 
           <h3>Where to Buy</h3>
@@ -47,14 +47,17 @@
         </div>
       </section>
 
+      <!-- INGREDIENTS + WHY COLUMN -->
       <section class="product-bottom">
         <div class="ingredients-column">
           <h3>Ingredients</h3>
 
           <h4>Safe</h4>
+          <!-- pills will be injected here -->
           <div id="safe-ingredients" class="pill-list"></div>
 
           <h4>Potential Irritants</h4>
+          <!-- pills will be injected here -->
           <div id="irritant-ingredients" class="pill-list"></div>
         </div>
 
@@ -69,3 +72,4 @@
     <script src="product.js"></script>
   </body>
 </html>
+

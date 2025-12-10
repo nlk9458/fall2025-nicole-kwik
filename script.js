@@ -2,6 +2,15 @@ console.log(skincare[0].name);
 
 const trendingContainer = document.getElementById("trending-products");
 const recommendedContainer = document.getElementById("recommended-products");
+const homeSearchInput = document.getElementById("home-search-input");
+
+if (homeSearchInput) {
+    homeSearchInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+            window.location.href = "browse.html";
+        }
+    });
+}
 
 function createProductCard(product) {
   const productDiv = document.createElement("div");
@@ -36,26 +45,23 @@ function createProductCard(product) {
   return productDiv;
 }
 
-// 🔹 Trending Products
+// Trending Products
 skincare
   .filter((product) => product.isTrending)
   .forEach((product) => {
     const card = createProductCard(product);
 
-    // only add click if product has an id (right now: your first 2 items)
     if (product.id) {
       card.addEventListener("click", () => {
-        // ⬇️ THIS IS CORRECT
         window.location.href = `my-project/product.html?id=${product.id}`;
       });
     }
 
-    // ⬇️ this MUST be inside the forEach
     trendingContainer.appendChild(card);
     console.log("Trending product:", product.name, "id:", product.id);
   });
 
-// 🔹 Recommended Products
+// Recommended Products
 skincare
   .filter((product) => product.isRecommended)
   .forEach((product) => {
