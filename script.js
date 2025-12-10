@@ -53,7 +53,7 @@ skincare
 
     if (product.id) {
       card.addEventListener("click", () => {
-        window.location.href = `my-project/product.html?id=${product.id}`;
+        window.location.href = `product.html?id=${product.id}`;
       });
     }
 
@@ -69,7 +69,7 @@ skincare
 
     if (product.id) {
       card.addEventListener("click", () => {
-        window.location.href = `my-project/product.html?id=${product.id}`;
+        window.location.href = `product.html?id=${product.id}`;
       });
     }
 
