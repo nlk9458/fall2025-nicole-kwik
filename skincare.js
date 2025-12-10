@@ -15,8 +15,8 @@ const skincare = [
         whyNotSafe: 
         "This product contains fragrance and coconut oil, which can be irritating for sensitive skin types.",
         whereToBuy: [
-            { store: "Ulta", url: "https://www.ulta.com/p/oil-cleanser-xlsImpprod17781099" },
-            { store: "Amazon", url: "https://www.amazon.com/CeraVe-Cleansing-Cleanser-Normal-Dry/dp/B00SNPCSUY" }
+            { store: "Ulta", url: "https://www.ulta.com/p/hydrating-foaming-oil-cleanser-pimprod2039907?sku=2611324" },
+            { store: "Amazon", url: "https://www.amazon.com/CeraVe-Hydrating-Triglyceride-Hyaluronic-Ceramides/dp/B0C7J7CWBN" }
         ]
     },
     {
@@ -33,8 +33,8 @@ const skincare = [
         safeIngredients: ["Heartleaf Extract", "Panthenol", "Allantoin"],
         irritantIngredients: [],
         whereToBuy: [
-            { store: "YesStyle", url: "https://www.yesstyle.com/en/anua-heartleaf-foaming-cleanser-150ml/info.html/pid.1055728941.html" },
-            { store: "Amazon", url: "https://www.amazon.com/Anua-Heartleaf-Foaming-Cleanser-150ml/dp/B08CVB3W6V" }
+            { store: "Ulta", url: "https://www.ulta.com/p/heartleaf-quercetinol-pore-deep-cleansing-foam-pimprod2048920?sku=2634189" },
+            { store: "Amazon", url: "https://www.amazon.com/ANUA-Heartleaf-Quercetinol-Pore-Cleansing/dp/B0BVV8BNYJ" }
         ]
     },
     {
